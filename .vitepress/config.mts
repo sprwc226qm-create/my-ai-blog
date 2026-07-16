@@ -5,7 +5,6 @@ export default defineConfig({
   description: '用 AI 辅助搭建的个人技术博客',
   lang: 'zh-CN',
   cleanUrls: true,
-  appearance: 'dark',
 
   head: [
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
@@ -14,7 +13,6 @@ export default defineConfig({
   ],
 
   markdown: {
-    theme: 'github-dark',
     lineNumbers: true,
   },
 

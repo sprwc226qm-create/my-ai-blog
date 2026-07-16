@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import { onMounted, nextTick } from 'vue'
+import { onMounted, watch, nextTick } from 'vue'
+import { useData } from 'vitepress'
+
+const { isDark } = useData()
 
 function loadGiscus() {
   const container = document.getElementById('giscus-container')
@@ -17,7 +20,7 @@ function loadGiscus() {
   script.setAttribute('data-reactions-enabled', '1')
   script.setAttribute('data-emit-metadata', '0')
   script.setAttribute('data-input-position', 'bottom')
-  script.setAttribute('data-theme', 'transparent_dark')
+  script.setAttribute('data-theme', isDark.value ? 'transparent_dark' : 'light')
   script.setAttribute('data-lang', 'zh-CN')
   script.setAttribute('crossorigin', 'anonymous')
   script.async = true
@@ -27,6 +30,10 @@ function loadGiscus() {
 
 onMounted(() => {
   nextTick(() => loadGiscus())
+})
+
+watch(isDark, () => {
+  loadGiscus()
 })
 </script>
 
@@ -41,15 +48,30 @@ onMounted(() => {
 .giscus-wrapper {
   margin-top: 48px;
   padding: 32px 24px;
-  border: 1px solid #2a2a2a;
   border-radius: 14px;
+}
+
+:root:not(.dark) .giscus-wrapper {
+  background: #FFFFFF;
+  border: 1px solid #F0DED8;
+}
+
+.dark .giscus-wrapper {
   background: #111;
+  border: 1px solid #2a2a2a;
 }
 
 .comments-title {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 16px;
+}
+
+:root:not(.dark) .comments-title {
+  color: #4A3F3F;
+}
+
+.dark .comments-title {
   color: #f0f0f0;
 }
 </style>
