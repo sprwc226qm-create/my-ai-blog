@@ -8,10 +8,17 @@
     "build": "vitepress build",
     "preview": "vitepress preview"
   },
-  "keywords": ["blog", "vitepress", "tech"],
+  "keywords": [
+    "blog",
+    "vitepress",
+    "tech"
+  ],
   "author": "皮语涵",
   "license": "ISC",
   "devDependencies": {
     "vitepress": "^1.6.4"
+  },
+  "dependencies": {
+    "vue": "^3.5.40"
   }
 }

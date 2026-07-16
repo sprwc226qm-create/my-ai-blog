@@ -1,0 +1,29 @@
+/* 文章页面增强样式 */
+
+/* 文章内容区域加宽 */
+.vp-doc {
+  line-height: 1.8;
+}
+
+/* 代码块优化 */
+.vp-doc div[class*='language-'] {
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+/* 表格样式 */
+.vp-doc table {
+  font-size: 14px;
+}
+
+.vp-doc th {
+  white-space: nowrap;
+}
+
+/* 引用块样式 */
+.vp-doc blockquote {
+  border-left: 3px solid var(--vp-c-brand-1);
+  background: var(--vp-c-bg-soft);
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
+}
