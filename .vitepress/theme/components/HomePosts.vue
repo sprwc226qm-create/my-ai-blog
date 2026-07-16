@@ -32,6 +32,22 @@ const posts = [
     summary: '半年 AI 辅助写作经验总结。五步工作流 + 去 AI 味技巧 + 工具清单，人机协作方法论。',
     tags: ['写作', 'Workflow', '方法论'],
   },
+  {
+    title: '从数据大屏到 AI 问答：Vue 3 全栈可视化平台开发实战',
+    link: '/posts/vue3-visualization-platform',
+    date: '2026-07-16',
+    emoji: '📊',
+    summary: '40+ 源文件、13 条路由、7 种图表类型。从四层架构设计到 AI 流式问答，完整可视化平台搭建。',
+    tags: ['Vue 3', 'ECharts', 'TypeScript', '全栈'],
+  },
+  {
+    title: '从 CSV 到 API：Node.js 模拟 Hive 数仓五层 ETL 全流程',
+    link: '/posts/nodejs-etl-datawarehouse',
+    date: '2026-07-16',
+    emoji: '🗄️',
+    summary: 'Express 5 + SQLite，用轻量级技术栈模拟 ODS→DWD→DIM→DWS→ADS 五层离线数仓 ETL 全过程。',
+    tags: ['Node.js', 'ETL', '数仓', 'Express'],
+  },
 ]
 </script>
 

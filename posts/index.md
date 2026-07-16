@@ -9,7 +9,7 @@
 <div class="posts-list">
   <ul>
     <li>
-      <a href="./first-blog-built-with-ai">🛠️ 我用 DeepSeek 和 Claude 在 VS Code 里搭建了这个博客</a>
+      <a href="./first-blog-built-with-ai">🚀 我用 DeepSeek 和 Claude 在 VS Code 里搭建了这个博客</a>
       <br><small>从零到上线，全程 AI 辅助搭建博客的完整记录 · 07-16</small>
     </li>
     <li>
@@ -23,6 +23,14 @@
     <li>
       <a href="./ai-writing-workflow">✍️ 我的 AI 写作工作流：从提纲到发布</a>
       <br><small>五步工作流，人机协作方法论，附工具清单 · 07-16</small>
+    </li>
+    <li>
+      <a href="./vue3-visualization-platform">📊 从数据大屏到 AI 问答：Vue 3 全栈可视化平台开发实战</a>
+      <br><small>40+ 源文件、13 路由、7 种图表，四层架构 + AI 流式问答 · 07-16</small>
+    </li>
+    <li>
+      <a href="./nodejs-etl-datawarehouse">🗄️ 从 CSV 到 API：Node.js 模拟 Hive 数仓五层 ETL 全流程</a>
+      <br><small>Express 5 + SQLite，ODS→DWD→DIM→DWS→ADS 五层架构 · 07-16</small>
     </li>
   </ul>
 </div>
