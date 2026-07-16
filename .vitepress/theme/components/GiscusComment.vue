@@ -17,7 +17,7 @@ function loadGiscus() {
   script.setAttribute('data-reactions-enabled', '1')
   script.setAttribute('data-emit-metadata', '0')
   script.setAttribute('data-input-position', 'bottom')
-  script.setAttribute('data-theme', 'preferred_color_scheme')
+  script.setAttribute('data-theme', 'transparent_dark')
   script.setAttribute('data-lang', 'zh-CN')
   script.setAttribute('crossorigin', 'anonymous')
   script.async = true
@@ -40,13 +40,16 @@ onMounted(() => {
 <style scoped>
 .giscus-wrapper {
   margin-top: 48px;
-  padding-top: 32px;
-  border-top: 1px solid var(--vp-c-divider);
+  padding: 32px 24px;
+  border: 1px solid #2a2a2a;
+  border-radius: 14px;
+  background: #111;
 }
 
 .comments-title {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 16px;
+  color: #f0f0f0;
 }
 </style>
